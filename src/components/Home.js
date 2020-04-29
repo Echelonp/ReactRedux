@@ -7,7 +7,7 @@ class Home extends Component {
   };
   componentDidMount() {
     axios.get("https://jsonplaceholder.typicode.com/posts").then((res) => {
-      console.log(res["data"][0]["title"]);
+      //   console.log(res["data"][0]["title"]);
       this.setState({
         posts: res.data.slice(0, 10),
       });
